@@ -1,4 +1,4 @@
-from helpers import setup_driver, click, get_listing_urls, scrape_listing, go_to_next_page, human_delay
+from helpers import *
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 import pandas as pd
@@ -10,6 +10,8 @@ SELECTORS = {
     "appartement":  (By.CSS_SELECTOR, "button[aria-label='Appartement']"),
     "rechercher":   (By.CSS_SELECTOR, "button[aria-label='Rechercher']"),
 }
+
+BASE_URL_PARIS = 'https://www.leboncoin.fr/recherche?category=9&locations=Paris__48.86017419624389_2.337177366534126_9370'
 
 driver = setup_driver()
 wait = WebDriverWait(driver, timeout=60, poll_frequency=1)

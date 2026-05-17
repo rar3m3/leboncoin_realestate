@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 
 BASE_URL = 'https://www.leboncoin.fr'
-BASE_URL_PARIS = 'https://www.leboncoin.fr/recherche?category=9&locations=Paris__48.86017419624389_2.337177366534126_9370'
 
 #human_delay to simulate a human browsing (scraping detection)
 def human_delay(min_sec=2, max_sec=5):
