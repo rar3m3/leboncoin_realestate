@@ -16,6 +16,7 @@ BASE_URL_PARIS = 'https://www.leboncoin.fr/recherche?category=9&locations=Paris_
 driver = setup_driver()
 wait = WebDriverWait(driver, timeout=60, poll_frequency=1)
 
+#try needed: driver.quit() must run even if error upstream
 try:
     driver.get('https://www.google.fr/')
     human_delay()

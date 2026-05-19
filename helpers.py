@@ -20,7 +20,7 @@ def human_scroll(driver):
         time.sleep(random.uniform(0.5, 1.5))
     driver.execute_script("window.scrollBy(0, -300);")
     time.sleep(random.uniform(0.5, 1.0))
-
+sudo apt install touchegg
 #click element
 def click(wait, selector):
     wait.until(ec.element_to_be_clickable(selector)).click()
@@ -32,7 +32,7 @@ def setup_driver():
     options.add_argument("--lang=fr-FR")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-popup-blocking")
-    driver = uc.Chrome(options=options, version_main=147)
+    driver = uc.Chrome(options=options, version_main=148)
     driver.maximize_window()
     driver.delete_all_cookies()
     return driver
